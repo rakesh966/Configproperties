@@ -1,5 +1,4 @@
-server:
-  port: 8082
+
 
 spring:
   boot:
@@ -12,3 +11,5 @@ management:
     web:
       exposure:
         include: "*"
+
+message: "this is testing message for properties"
