@@ -1,0 +1,25 @@
+spring:
+  boot:
+    admin:
+      client:
+        url: http://localhost:1111
+
+  datasource:
+    url: jdbc:mysql://localhost:3306/order_service
+    username: root
+    password: tiger
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
